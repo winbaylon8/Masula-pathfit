@@ -3,7 +3,6 @@ import Preloader from "../src/components/Pre";
 import Navbar from "./components/Navbar";
 import About from "./components/About/About";
 import Projects from "./components/Projects/Projects";
-import Footer from "./components/Footer";
 import Resume from "./components/Resume/ResumeNew";
 import {
   BrowserRouter as Router,
@@ -57,7 +56,6 @@ function App() {
           <Route path="/health-trivia" element={<HealthTrivia />} />
           <Route path="*" element={<Navigate to="/"/>} />
         </Routes>
-        <Footer />
       </div>
     </Router>
   );
