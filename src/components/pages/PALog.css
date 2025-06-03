@@ -1,0 +1,72 @@
+.workout-card {
+  background-color: rgba(35, 35, 45, 0.2);
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border: 1px solid rgba(108, 99, 255, 0.15);
+}
+
+.workout-card .card-header {
+  background-color: var(--imp-text-color);
+  color: white;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  padding: 1rem;
+}
+
+.workout-card .card-body {
+  padding: 2rem;
+}
+
+.workout-table {
+  color: #c0c0c0;
+  margin-bottom: 0;
+}
+
+.workout-table thead th {
+  border-bottom: 2px solid var(--imp-text-color);
+  color: var(--imp-text-color);
+  font-weight: 600;
+}
+
+.workout-table td {
+  padding: 0.75rem;
+  border: none;
+}
+
+.workout-image {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.workout-image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  filter: grayscale(100%) contrast(1.2);
+  transition: filter 0.3s ease;
+}
+
+.workout-image img:hover {
+  filter: grayscale(0%) contrast(1);
+}
+
+.week-block {
+  margin-top: 2rem;
+}
+
+@media (max-width: 768px) {
+  .workout-card .card-body {
+    padding: 1rem;
+  }
+
+  .workout-image {
+    margin-top: 2rem;
+  }
+
+  .workout-table {
+    font-size: 0.9rem;
+  }
+} 

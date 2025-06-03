@@ -1,0 +1,134 @@
+.trivia-container {
+  padding: 30px 0;
+  max-width: 1200px;
+  margin: 100px auto 50px;
+}
+
+.trivia-header {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.trivia-header h1 {
+  color: var(--bs-purple);
+  font-size: 2.6em;
+  margin-bottom: 20px;
+  line-height: 1.3;
+}
+
+.trivia-header p {
+  color: #c0c0c0;
+  font-size: 1.2em;
+  max-width: 800px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+.trivia-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+  margin-bottom: 50px;
+}
+
+.trivia-card {
+  background-color: rgba(35, 35, 45, 0.2);
+  border-radius: 15px;
+  padding: 30px;
+  border: 1px solid rgba(108, 99, 255, 0.15);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.trivia-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.trivia-card h3 {
+  color: var(--bs-purple);
+  font-size: 1.4em;
+  margin-bottom: 15px;
+  padding-bottom: 10px;
+  border-bottom: 2px solid rgba(108, 99, 255, 0.2);
+}
+
+.trivia-card p {
+  color: #c0c0c0;
+  font-size: 1.1em;
+  line-height: 1.6;
+  margin: 0;
+}
+
+.references-section {
+  background-color: rgba(35, 35, 45, 0.2);
+  border-radius: 15px;
+  padding: 30px;
+  margin-top: 50px;
+  border: 1px solid rgba(108, 99, 255, 0.15);
+}
+
+.references-section h2 {
+  color: var(--bs-purple);
+  font-size: 1.8em;
+  margin-bottom: 20px;
+}
+
+.references-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.references-list li {
+  color: #c0c0c0;
+  font-size: 0.95em;
+  margin-bottom: 15px;
+  padding-left: 20px;
+  position: relative;
+  line-height: 1.6;
+}
+
+.references-list li::before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  color: var(--bs-purple);
+}
+
+.references-list li a {
+  color: var(--bs-purple);
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.references-list li a:hover {
+  color: #8278ff;
+}
+
+@media (max-width: 768px) {
+  .trivia-container {
+    padding: 20px;
+    margin-top: 80px;
+  }
+
+  .trivia-header h1 {
+    font-size: 2em;
+  }
+
+  .trivia-header p {
+    font-size: 1.1em;
+  }
+
+  .trivia-card {
+    padding: 20px;
+  }
+
+  .trivia-card h3 {
+    font-size: 1.3em;
+  }
+
+  .trivia-card p {
+    font-size: 1em;
+  }
+} 
