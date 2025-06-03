@@ -364,7 +364,7 @@ function FoodLog() {
               Food <span className="purple">Log</span>
             </h1>
             <p className="home-about-body">
-              My nutrition journey from March 24 to April 25
+              Track your nutrition journey from March 24 to April 25
             </p>
           </Col>
         </Row>

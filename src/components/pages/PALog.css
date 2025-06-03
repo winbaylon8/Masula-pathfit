@@ -1,9 +1,8 @@
 .workout-card {
-  background-color: rgba(35, 35, 45, 0.2);
+  background-color: rgba(255, 255, 255, 0.05);
   border: none;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  border: 1px solid rgba(108, 99, 255, 0.15);
 }
 
 .workout-card .card-header {
@@ -19,8 +18,7 @@
 }
 
 .workout-table {
-  color: #c0c0c0;
-  margin-bottom: 0;
+  color: white;
 }
 
 .workout-table thead th {
@@ -30,7 +28,7 @@
 }
 
 .workout-table td {
-  padding: 0.75rem;
+  padding: 1rem 0.5rem;
   border: none;
 }
 
@@ -41,16 +39,10 @@
 }
 
 .workout-image img {
-  max-width: 100%;
-  height: auto;
+  max-height: 300px;
+  object-fit: cover;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  filter: grayscale(100%) contrast(1.2);
-  transition: filter 0.3s ease;
-}
-
-.workout-image img:hover {
-  filter: grayscale(0%) contrast(1);
 }
 
 .week-block {
@@ -64,6 +56,10 @@
 
   .workout-image {
     margin-top: 2rem;
+  }
+
+  .workout-image img {
+    max-height: 200px;
   }
 
   .workout-table {

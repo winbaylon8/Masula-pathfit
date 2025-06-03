@@ -217,7 +217,7 @@ function PALog() {
               Physical <span className="purple">Activity Log</span>
             </h1>
             <p className="home-about-body">
-              My fitness journey from March 24 to April 25
+              Track your fitness journey from March 24 to April 25
             </p>
           </Col>
         </Row>
