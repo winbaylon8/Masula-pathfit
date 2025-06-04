@@ -179,9 +179,16 @@ function Recipes() {
         {/* Video Section */}
         <div className="video-section">
           <h2>Watch How It's Made</h2>
-          <div className="video-container">
-            <video controls>
-              <source src="/food log/KUSINA.MOV" type="video/quicktime" />
+          <div className="video-container" style={{ maxWidth: '800px', margin: '0 auto' }}>
+            <video 
+              controls
+              width="100%"
+              height="auto"
+              style={{ borderRadius: '12px' }}
+              playsInline
+            >
+              <source src={process.env.PUBLIC_URL + "/food%20log/KUSINA.mp4"} type="video/mp4" />
+              <source src={process.env.PUBLIC_URL + "/food%20log/KUSINA.MOV"} type="video/quicktime" />
               Your browser does not support the video tag.
             </video>
           </div>

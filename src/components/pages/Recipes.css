@@ -113,8 +113,10 @@
 }
 
 .video-section {
-  margin-top: 60px;
-  text-align: center;
+  padding: 2rem 0;
+  background: rgba(35, 35, 45, 0.2);
+  margin-top: 2rem;
+  border-radius: 12px;
 }
 
 .video-section h2 {
@@ -124,17 +126,21 @@
 }
 
 .video-container {
-  width: 100%;
-  max-width: 800px;
-  margin: 0 auto;
-  border-radius: 15px;
+  position: relative;
+  padding-top: 56.25%; /* 16:9 Aspect Ratio */
   overflow: hidden;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  margin: 0 auto;
+  max-width: 800px;
 }
 
 .video-container video {
+  position: absolute;
+  top: 0;
+  left: 0;
   width: 100%;
-  height: auto;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 12px;
 }
 
 @media (max-width: 768px) {
