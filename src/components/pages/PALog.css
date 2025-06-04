@@ -1,8 +1,9 @@
 .workout-card {
-  background-color: rgba(255, 255, 255, 0.05);
+  background-color: rgba(35, 35, 45, 0.2);
   border: none;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border: 1px solid rgba(108, 99, 255, 0.15);
 }
 
 .workout-card .card-header {
@@ -36,18 +37,39 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  filter: grayscale(100%);
 }
 
 .workout-image img {
-  max-height: 300px;
-  object-fit: cover;
+  max-height: 200px; /* Reduced from 300px */
+  width: auto;
+  object-fit: contain; /* Changed from cover to maintain aspect ratio */
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  filter: grayscale(100%);
 }
 
 .week-block {
   margin-top: 2rem;
+}
+
+.activity-image {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.activity-image img {
+  max-height: 300px;
+  width: auto;
+  object-fit: contain;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  filter: grayscale(100%); /* Added to make images monochromatic */
+  transition: filter 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.activity-image img:hover {
+  filter: grayscale(0%); /* Return to color on hover for better UX */
 }
 
 @media (max-width: 768px) {
@@ -60,7 +82,7 @@
   }
 
   .workout-image img {
-    max-height: 200px;
+    max-height: 150px; /* Reduced from 200px */
   }
 
   .workout-table {
