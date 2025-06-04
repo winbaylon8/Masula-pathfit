@@ -13,7 +13,13 @@ function Recipes() {
 
         {/* Kani Salad Spring Rolls */}
         <div className="recipe-card">
-          <h2>Kani Salad Spring Rolls</h2>
+          <img 
+            src={process.env.PUBLIC_URL + "/PathfitKusina/TunaSpringRolls.jpg"} 
+            alt="Kani Salad Spring Rolls" 
+            className="recipe-photo"
+            style={{ width: '100%', maxWidth: '400px', borderRadius: '12px', marginBottom: '1em' }}
+          />
+          <h2>Tuna Spring Rolls</h2>
           <p className="description">
             A refreshing twist on the classic kani salad, wrapped for convenience and packed with crisp greens, tuna, and a delightful dressing. Light, satisfying, and full of flavor.
           </p>
@@ -67,6 +73,12 @@ function Recipes() {
 
         {/* Malunggay-Kamote Pesto Pasta */}
         <div className="recipe-card">
+          <img 
+            src={process.env.PUBLIC_URL + "/PathfitKusina/Malunggay-KamotePestoPasta.jpeg"} 
+            alt="Malunggay-Kamote Pesto Pasta" 
+            className="recipe-photo"
+            style={{ width: '100%', maxWidth: '400px', borderRadius: '12px', marginBottom: '1em' }}
+          />
           <h2>Malunggay-Kamote Pesto Pasta</h2>
           <p className="description">
             A nutritious pasta infused with malunggay and kamote leaves, bringing health and heartiness to every twirl. A fusion of wellness and taste, rich in vitamins and fiber.
@@ -121,6 +133,12 @@ function Recipes() {
 
         {/* Kamote Leaf Juice */}
         <div className="recipe-card">
+          <img 
+            src={process.env.PUBLIC_URL + "/PathfitKusina/KamoteLeafJuice.jpg"} 
+            alt="Kamote Leaf Juice" 
+            className="recipe-photo"
+            style={{ width: '100%', maxWidth: '400px', borderRadius: '12px', marginBottom: '1em' }}
+          />
           <h2>Kamote Leaf Juice</h2>
           <p className="description">
             A refreshing, earthy beverage made from kamote leaves with lemon, delivering a natural boost of nutrients with a smooth, slightly sweet taste. Detoxifying, hydrating, and packed with antioxidants.
