@@ -15,8 +15,7 @@ function FoodLog() {
               items: [
                 "2 pieces of chicken wings",
                 "half sweet potato",
-                "1 cup guisadong gulay",
-                "4 small spring rolls"
+                "1 cup guisadong gulay"
               ],
               image: "/food log/IMG_5580.JPG"
             },
@@ -25,10 +24,7 @@ function FoodLog() {
                 "1 large sweet potato",
                 "7 pieces small okra",
                 "2 breast chicken",
-                "1 medium egg",
-                "2 medium-sized banana",
-                "1 medium-sized orange",
-                "1 small apple"
+                "1 medium egg"
               ],
               image: "/food log/IMG_5581.JPG"
             }
@@ -40,16 +36,15 @@ function FoodLog() {
           meals: {
             lunch: {
               items: [
-                "4 small spring rolls",
-                "1 cup rice",
-                "1 sunny-side",
-                "half-cup pastil"
+                "4 small spring rolls"
               ],
               image: "/food log/IMG_5584.JPG"
             },
             dinner: {
               items: [
-                "2 cups of kimchi chicken rice"
+                "2 medium-sized banana",
+                "1 medium-sized orange",
+                "1 small apple"
               ],
               image: "/food log/IMG_5585.JPG"
             }
@@ -97,7 +92,7 @@ function FoodLog() {
                 "blanched alugbati",
                 "1 medium galunggong",
                 "2 small rilled talong",
-                "2 cups cabbage"
+                
               ],
               image: "/food log/IMG_5590.JPG"
             }
@@ -117,6 +112,7 @@ function FoodLog() {
             },
             dinner: {
               items: [
+                "2 cups cabbage",
                 "1 piece grilled chicken breast",
                 "3 boiled eggs"
               ],
